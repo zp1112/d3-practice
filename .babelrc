@@ -1,0 +1,29 @@
+{
+    "presets": [
+        "babel-preset-react",
+        "stage-2",
+        "env",
+        [
+            "babel-preset-env",
+            {
+                "modules": false,
+                "targets": {
+                    "ie": 9
+                }
+            }
+        ]
+    ],
+    "plugins": [
+        "transform-object-rest-spread",
+        "transform-runtime",
+        "transform-decorators-legacy",
+        "transform-class-properties",
+        [
+            "import",
+            {
+                "libraryName": "antd",
+                "style": true
+            }
+        ]
+    ]
+}
