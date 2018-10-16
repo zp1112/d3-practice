@@ -30,6 +30,15 @@ export default class MyMenu extends React.PureComponent {
             {name: '雷达图', page_name: 'radar', children: [{
                 name: '技术能力分布', page_name: 'example1',
             }]},
+            {name: '柱状图', page_name: 'bar', children: [{
+                name: '散点图', page_name: 'example1',
+            }]},
+            {name: '地图', page_name: 'map', children: [{
+                name: '例子1', page_name: 'example1',
+            }]},
+            {name: '缩放', page_name: 'zoom', children: [{
+                name: '坐标系缩放', page_name: 'example1',
+            }]},
             {name: '测试', page_name: 'test', children: [{
                 name: 'react新特性', page_name: 'new',
             }]},

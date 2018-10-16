@@ -12,6 +12,9 @@ import DrGrey from '../container/force/drgrey';
 import PieSkill from '../container/pie/skill';
 import TestNew from '../container/test/new';
 import Radar1 from '../container/radar/example1';
+import Bar1 from '../container/bar/example1';
+import Map1 from '../container/map/example1';
+import Zoom1 from '../container/zoom/example1';
 
 // ==================
 // 所需的所有组件
@@ -67,6 +70,21 @@ export default class BasicLayout extends React.Component {
                 exact
                 path="/radar/example1"
                 render={(props) => <Radar1 {...props} />}
+              />
+              <Route
+                exact
+                path="/bar/example1"
+                render={(props) => <Bar1 {...props} />}
+              />
+              <Route
+                exact
+                path="/map/example1"
+                render={(props) => <Map1 {...props} />}
+              />
+              <Route
+                exact
+                path="/zoom/example1"
+                render={(props) => <Zoom1 {...props} />}
               />
               <Route
                 exact

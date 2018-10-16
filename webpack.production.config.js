@@ -44,6 +44,10 @@ module.exports = {
                     'postcss-loader',
                 ],
             },
+            {
+                test: /\.(csv|tsv)$/,
+                use: ["csv-loader"]
+              },
             {   // .less 解析
                 test: /\.less$/,
                 loaders: [

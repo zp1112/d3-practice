@@ -38,6 +38,10 @@ module.exports = {
                 loader: 'happypack/loader?id=happybabel',
                 include: path.resolve(__dirname, "src"),
             },
+            {
+                test: /\.(c|d|t)sv$/, // load all .csv, .dsv, .tsv files with dsv-loader
+                use: ['dsv-loader'] // or dsv-loader?delimiter=,
+              },
             {   // .css 解析
                 test: /\.css$/,
                 loaders: [
